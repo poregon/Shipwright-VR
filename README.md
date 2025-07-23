@@ -1,15 +1,46 @@
 ![Ship of Harkinian](docs/shiptitle.darkmode.png#gh-dark-mode-only)
 ![Ship of Harkinian](docs/shiptitle.lightmode.png#gh-light-mode-only)
 
+# Ship of Harkinian in **Virtual Reality**!
+## [Download Release v0.1](https://github.com/poregon/Shipwright-VR/releases)
+>###### *Requires a LoZ z64 backup to extract game assets.*
+> Release v0.2 fixes some HUD elements sizing/distance (coming soon)
+>
+> HD textures work in this version!
+#
+
+## TO DO
+* Shipwright's Menus and game menu/hud's 2D depthless textures only show on main application window, not stereo.
+* Additional aspect ratio support
+#
+
+## Thank you
+#### *** [HarbourMasters64](https://github.com/HarbourMasters64) for the incredible effort on Harkinian.
+* [Shipwright](https://github.com/HarbourMasters64/Shipwright)
+#### *** [ShinyWindow](https://github.com/ShinyWindow) for the original Ship of Harkinian VR and libultraship-vr (now outdated).
+* [Shipwright-VR](https://github.com/ShinyWindow/Shipwright-VR) (use my updated Shipwright-VR)
+* [libultraship-vr](https://github.com/ShinyWindow/libultraship-vr) (use my updated libultraship-vr)
+#
+
+## Important Information For VR
+
+* Use **DirectX11** ONLY. OpenGL/Metal not supported yet.
+* Use a **4:3 aspect ratio**. Scale window accordingly.
+* Disable **MSAA**. No plans to support it.
+* Keep **Internal Resolution** at 100%.
+* Keep **Enable Advanced Settings** disabled while playing.
+
+
+## To set the window size up for a larger resolution:
+1. Temporarily enable **Advanced Settings** under Settings > Graphics
+2. Set **Aspect Ratio** to 4:3
+3. Manually resize window **uniformly** (no vertical/horizontal black bars).
+4. Disable **Advanced Settings** and close menu
+#
+
 ## Website
 
 Official Website: https://www.shipofharkinian.com/
-
-## Discord
-
-Official Discord: https://discord.com/invite/shipofharkinian
-
-If you're having any trouble after reading through this `README`, feel free to ask for help in the Support text channels. Please keep in mind that we do not condone piracy.
 
 # Quick Start
 
@@ -18,7 +49,7 @@ The Ship does not include any copyrighted assets.  You are required to provide a
 ### 1. Verify your ROM dump
 You can verify you have dumped a supported copy of the game by using the compatibility checker at https://ship.equipment/. If you'd prefer to manually validate your ROM dump, you can cross-reference its `sha1` hash with the hashes [here](docs/supportedHashes.json).
 
-### 2. Download The Ship of Harkinian from [Releases](https://github.com/HarbourMasters/Shipwright/releases)
+### 2. Download The Ship of Harkinian from [Releases](https://github.com/poregon/Shipwright-VR/releases)
 
 ### 3. Launch the Game!
 #### Windows
@@ -91,13 +122,6 @@ If you're interested in creating and/or packing your own custom asset `.otr` fil
 ### Building
 
 If you want to manually compile SoH, please consult the [building instructions](docs/BUILDING.md).
-
-### Playtesting
-If you want to playtest a continuous integration build, you can find them at the links below. Keep in mind that these are for playtesting only, and you will likely encounter bugs and possibly crashes. 
-
-* [Windows](https://nightly.link/HarbourMasters/Shipwright/workflows/generate-builds/develop/soh-windows.zip)
-* [macOS](https://nightly.link/HarbourMasters/Shipwright/workflows/generate-builds/develop/soh-mac.zip)
-* [Linux](https://nightly.link/HarbourMasters/Shipwright/workflows/generate-builds/develop/soh-linux.zip)
 
 ### Further Reading
 More detailed documentation can be found in the 'docs' directory, including the aforementioned [building instructions](docs/BUILDING.md).
